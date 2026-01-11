@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Hand, Mail } from "lucide-react";
+import { Hand, Mail, Linkedin, Github } from "lucide-react";
 import TypingRoles from "./TypingRoles";
 import CodeLines from "./CodeLines";
 
@@ -45,13 +45,33 @@ return (
          Let&apos;s create something amazing!
       </p>
 
-      <a
-         href="#contact"
-         className="inline-flex items-center gap-2 px-4 py-2 md:px-5 md:py-3 bg-linear-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/30 rounded-full text-white font-semibold backdrop-blur-sm hover:from-blue-500/30 hover:to-purple-500/30 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]"
-      >
-         <Mail className="w-4 h-4 md:w-5 md:h-5" />
-         <span className="text-sm md:text-base">Get in Touch</span>
-      </a>
+      <div className="flex items-center gap-3">
+         <a
+            href="#contact"
+            className="inline-flex items-center gap-2 px-4 py-2 md:px-5 md:py-2 cs-glass-pink rounded-full font-semibold backdrop-blur-sm hover:scale-105 transition-all duration-300"
+         >
+            <Mail className="w-4 h-4 md:w-5 md:h-5" />
+            <span className="text-sm md:text-base">Get in Touch</span>
+         </a>
+         <a
+            href="https://www.linkedin.com/in/luizacaldeira/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full cs-glass-blue border border-white/20 p-2 transition-colors duration-200 shadow-md"
+            aria-label="LinkedIn"
+         >
+            <Linkedin className="w-5 h-5" />
+         </a>
+         <a
+            href="https://github.com/luizacaldeira"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full cs-glass-dark border border-white/20 p-2 transition-colors duration-200 shadow-md"
+            aria-label="GitHub"
+         >
+            <Github className="w-5 h-5 text-white" />
+         </a>
+      </div>
       </div>
    </header>
 );
