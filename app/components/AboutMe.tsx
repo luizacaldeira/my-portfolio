@@ -21,7 +21,7 @@ export default function AboutMe() {
             <div className="relative shrink-0">
                <div className="absolute -inset-1 rounded-full bg-linear-to-tr from-violet-500/40 to-pink-500/40 blur-lg" />
                <Image
-                  src="/luizapfp.jpeg"
+                  src="/luiza.jpeg"
                   alt="Luiza Caldeira"
                   width={200}
                   height={200}
