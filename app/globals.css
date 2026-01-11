@@ -1,26 +1,67 @@
 @import "tailwindcss";
+@import "tailwindcss-animated";
+@import "@casoon/tailwindcss-glass";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #3b0099;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-indigo-50: #efe5ff;
+  --color-indigo-100: #e0ccff;
+  --color-indigo-200: #c099ff;
+  --color-indigo-300: #a166ff;
+  --color-indigo-400: #8133ff;
+  --color-indigo-500: #6200ff;
+  --color-indigo-600: #4e00cc;
+  --color-indigo-700: #3b0099;
+  --color-indigo-800: #270066;
+  --color-indigo-900: #140033;
+  --color-indigo-950: #0e0024;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+  --color-primary: var(--primary);
+  --font-sans: var(--font-dm-sans);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-display: var(--font-space-grotesk);
+
+  /* Tag colors */
+  --tag-blue-from: #3b82f650;
+  --tag-blue-to: #06b6d430;
+  --tag-pink-from: #a855f740;
+  --tag-pink-to: #ec489920;
+  --tag-green-from: #10b98250;
+  --tag-green-to: #14b8a630;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+.tag-blue {
+  background: linear-gradient(to right, var(--tag-blue-from), var(--tag-blue-to));
+}
+
+.tag-pink {
+  background: linear-gradient(to right, var(--tag-pink-from), var(--tag-pink-to));
+}
+
+.tag-green {
+  background: linear-gradient(to right, var(--tag-green-from), var(--tag-green-to));
+}
+
+.bg-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.10;
+  background-image: url('/grain.jpg');
+  background-repeat: repeat;
+  mix-blend-mode: multiply;
 }
