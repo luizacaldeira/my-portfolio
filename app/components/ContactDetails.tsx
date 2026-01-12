@@ -64,7 +64,7 @@ return (
          <div className="flex items-center justify-between cs-glass-blue p-2 rounded-2xl">
             <div className="flex items-center gap-2 text-white/90">
             <Mail size={16} />
-            <a href={final.email} className="text-sm hover:underline">Email</a>
+            <a href={final.email} className="text-sm">Email</a>
             </div>
             <button
             onClick={() => handleCopy(final.email.replace(/^mailto:/, ""), "email")}
@@ -78,7 +78,7 @@ return (
          <div className="flex items-center justify-between cs-glass-green p-2 rounded-2xl">
             <div className="flex items-center gap-2 text-white/90">
             <Phone size={16} />
-            <a href={final.phone} className="text-sm hover:underline">Phone</a>
+            <a href={final.phone} className="text-sm">Phone</a>
             </div>
             <button
             onClick={() => handleCopy(final.phone.replace(/^tel:/, ""), "phone")}
@@ -100,10 +100,6 @@ return (
       <SocialMedia
          links={{
             linkedin: final.linkedin,
-            email: final.email,
-            phone: final.phone,
-            whatsapp: final.whatsapp,
-            instagram: final.instagram,
             github: final.github,
          }}
       />

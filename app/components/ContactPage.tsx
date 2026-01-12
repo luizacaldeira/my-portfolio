@@ -8,7 +8,7 @@ export default function ContactPage() {
             <div className="flex-1 h-full">
                <ContactForm />
             </div>
-            <div className="w-full md:w-80 h-full">
+            <div className="w-full md:w-60 lg:w-75 xl:w-85">
                <ContactDetails />
             </div>
          </div>

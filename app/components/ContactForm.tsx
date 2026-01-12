@@ -84,7 +84,7 @@ export default function ContactForm() {
       
          <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-6 flex-1 justify-between"
+            className="flex flex-col gap-6 flex-1 justify-start"
          >
             {formMessage && (
             <div
@@ -162,8 +162,8 @@ export default function ContactForm() {
             disabled={loading}
             aria-label="Send message"
             className={`
-               mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl
-               bg-linear-to-r cs-glass-purple px-6 py-3 font-semibold text-white
+               mt-4 font-display inline-flex w-full items-center justify-center gap-2 rounded-2xl
+               bg-linear-to-r from-indigo-200/50 to-indigo-300/40 text-indigo-50 backdrop-blur-md px-6 py-3 font-medium border border-indigo-100/30
                transition-all duration-300 cursor-pointer
                hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(255,255,255,0.10)]
                disabled:cursor-not-allowed disabled:opacity-60
