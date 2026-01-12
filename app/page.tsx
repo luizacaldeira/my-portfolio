@@ -24,7 +24,7 @@ export default function Page() {
 				<ShaderBG />
 				<div className="relative z-10 h-full flex flex-col">
 					<Navigation />
-					<main className="flex flex-col items-center justify-center pt-40">
+					<div className="flex flex-col items-center justify-center pt-25 md:pt-40">
 						<HeroSection />
 						<AboutMe />
 						<ToolsSwiper />
@@ -32,7 +32,7 @@ export default function Page() {
 						<Projects />
 						<Experience />
 						<ContactPage />
-					</main>
+					</div>
 					<footer>
 						<Footer />
 					</footer>
