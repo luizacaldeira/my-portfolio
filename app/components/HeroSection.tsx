@@ -1,14 +1,23 @@
 import Image from "next/image";
-import { Hand, Mail, Linkedin, Github } from "lucide-react";
+import { Hand, Mail, Linkedin, Github, X } from "lucide-react";
 import TypingRoles from "./TypingRoles";
 import CodeLines from "./CodeLines";
 
 export default function Hero() {
+   const handleCloseClick = (e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
+      const warningBanner = e.currentTarget.parentElement;
+      if (warningBanner) {
+         warningBanner.style.display = 'none';
+      }
+   };
 return (
    <div>
-      <div className="flex lg:hidden w-full p-10">
-         <div className="flex items-center rounded-full gap-2 font-display text-xs cs-glass-purple w-fit p-1 text-center">
+      <div className="flex lg:hidden w-full px-10 gap-2">
+         <div className="flex items-center rounded-full gap-2 font-display text-xs cs-glass-blue w-fit px-2 py-1 text-center">
             <p>For the best experience, please view this portfolio on a desktop device.</p>
+            <div onClick={handleCloseClick}>
+               <X />
+            </div>
          </div>
       </div>
       <header 
@@ -34,7 +43,7 @@ return (
                <TypingRoles />
             </div>
 
-            <div className="w-fit flex justify-center md:justify-start animate-shake animate-infinite animate-duration-17000">
+            <div className="w-fit flex justify-center md:justify-start mb-5 lg:mb-1 animate-shake animate-infinite animate-duration-19000">
                <Image
                   src="/keyframe.png"
                   alt="keyframe illustration"
@@ -50,7 +59,7 @@ return (
             <CodeLines />
          </div>
 
-         <p className="text-center md:text-right text-white/80 max-w-xs font-display">
+         <p className="text-center md:text-right  text-white/80 max-w-xs font-display">
             Let&apos;s create something amazing!
          </p>
 
