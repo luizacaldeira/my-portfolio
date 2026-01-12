@@ -3,11 +3,11 @@ import { useTypingEffect } from "@/hooks/useTypingEffect";
 
 const roles = [
     "React Dev",
-    "Frontend Dev",
-    "UI Builder",
+    "Frontend Enthusiast",
+    "UI/UX Builder",
     "Web Designer",
-    "Code Enthusiast",
-    "Problem Solver"
+    "Product Builder",
+    "Fullstack Dev"
 ];
 
 export default function TypingRoles() {
