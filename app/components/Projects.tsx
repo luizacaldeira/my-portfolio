@@ -42,8 +42,13 @@ export default function Projects({
    projects?: Project[];
 }) {
    return (
-      <section id="projects" className="w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-10">
-         <h2 className="text-white text-4xl mb-12 text-center">Projects</h2>
+      <section className="w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-6">
+         <h2 
+            className="text-white text-4xl mb-12 text-center"
+            data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom"
+         >
+            Projects
+         </h2>
 
          <div className="flex flex-col lg:flex-row gap-7 items-center">
             {projects.map((project) => (
@@ -52,6 +57,8 @@ export default function Projects({
                   className="w-full relative rounded-2xl overflow-hidden backdrop-blur-lg bg-white/5 border border-white/10 flex flex-col md:flex-row min-h-80
                   hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300
                   "
+                  data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out"
+                  data-aos-anchor-placement="top-bottom"
                >
                   {/* Image */}
                   <div className="relative h-56 md:h-auto md:w-2/5 w-full overflow-hidden shrink-0">

@@ -87,7 +87,13 @@ const experiences: ExperienceItem[] = [
 export default function Experience() {
    return (
       <section className="w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20">
-         <h2 className="text-white text-4xl mb-16 text-center">Experience</h2>
+         <h2 
+            className="text-white text-4xl mb-16 text-center"
+            data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="top-bottom"
+         >
+            Experience
+         </h2>
          
          <div className="relative">
             <div className="absolute md:left-8 left-7 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-indigo-500/50 to-transparent"></div>
@@ -99,7 +105,11 @@ export default function Experience() {
                         exp.current 
                            ? 'bg-linear-to-r tag-pink border-white/50 shadow-[0_0_20px_rgba(99,102,241,0.6)]' 
                            : 'bg-indigo-800 border-white/30 hover:bg-white/20'
-                     }`}></div>
+                     }`}
+                        data-aos="zoom-in"
+                        data-aos-duration="500"
+                        data-aos-anchor-placement="center-bottom"
+                     ></div>
                      
                <div className="
                   group relative
@@ -110,7 +120,10 @@ export default function Experience() {
                   hover:bg-white/15
                   hover:-translate-y-1
                   hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)]
-                  ">
+                  "
+                  data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
+                  data-aos-anchor-placement="top-bottom"
+                  >
 
                   <div className="flex flex-col md:flex-row justify-between items-start mb-5">
                      <div className="flex items-center gap-3 md:gap-4">

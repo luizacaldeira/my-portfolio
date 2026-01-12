@@ -4,7 +4,10 @@ import Skills from "./Skills";
 
 export default function AboutMe() {
    return (
-      <section id="about" className="flex flex-col items-center w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-15 md:mt-10">
+      <section 
+         id="about" 
+         className="flex flex-col items-center w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-15 md:mt-10" 
+         data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
          <h2 className="text-white text-3xl md:text-4xl   mb-10 text-center">
             About Me
          </h2>

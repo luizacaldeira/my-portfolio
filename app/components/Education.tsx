@@ -8,13 +8,16 @@ export default function Education() {
       { name: 'English', level: 85, label: 'Advanced' },
    ];
    return (
-      <section className="w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20">
-         <h2 className="text-white text-4xl mb-14 text-center">
+      <section 
+         id="education" className="w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-10">
+         <h2 className="text-white text-4xl mb-14 text-center"
+         data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out"
+         data-aos-anchor-placement='top-bottom'
+         >
             Education
          </h2>
 
-         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
-            {/* Education Card */}
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div
                className="
                group relative
@@ -23,8 +26,9 @@ export default function Education() {
                hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300
                flex flex-col gap-8 w-full
                "
+               data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-anchor-placement='top-bottom'
+            
             >
-               {/* Header */}
                <div className="flex items-start justify-between gap-6">
                <div className="flex items-center gap-4">
                   <GraduationCap size={48} className="text-white shrink-0" />
@@ -39,7 +43,6 @@ export default function Education() {
                   </div>
                </div>
 
-               {/* Status */}
                <div className="relative flex items-center gap-2">
                   <span className="h-3 w-3 bg-yellow-300 rounded-full animate-pulse animate-duration-1500" />
 
@@ -60,7 +63,6 @@ export default function Education() {
                </div>
                </div>
 
-               {/* Details */}
                <div className="flex flex-col gap-4 text-white/90">
                <div className="flex items-center gap-2">
                   <MapPin size={16} />
@@ -73,7 +75,6 @@ export default function Education() {
                </div>
             </div>
 
-            {/* Languages Card */}
             <div
                className="
                group relative
@@ -82,6 +83,7 @@ export default function Education() {
                hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300
                flex flex-col gap-8
                "
+               data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-anchor-placement='top-bottom'
             >
                <div className="flex items-center gap-4">
                <Languages size={42} className="text-white" />
@@ -115,6 +117,7 @@ export default function Education() {
                ))}
                </div>
             </div>
+            <div id="projects"></div>
          </div>
          </section>
 

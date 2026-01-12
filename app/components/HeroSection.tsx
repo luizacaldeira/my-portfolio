@@ -5,7 +5,10 @@ import CodeLines from "./CodeLines";
 
 export default function Hero() {
 return (
-   <header className="w-full flex flex-col md:flex-row items-center lg:items-start justify-center px-6 md:px-10 py-6 md:py-10 gap-0 lg:gap-30 mb-5">
+   <header 
+      className="w-full flex flex-col md:flex-row items-center lg:items-start justify-center px-6 md:px-10 py-6 md:py-10 gap-0 lg:gap-30 mb-5" 
+      data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom"
+   >
       <div className="text-white flex flex-col justify-between">
          <div className="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start gap-2 md:gap-6 text-3xl md:text-4xl lg:text-6xl font-light">
             <div className="inline-flex items-center whitespace-nowrap gap-2 md:gap-3 lg:gap-6">
@@ -16,7 +19,7 @@ return (
                Luiza
                </p>
                <span className="animate-wiggle-more animate-infinite animate-ease-in-out mt-0 md:mt-3">
-               <Hand className="w-8 h-8 md:w-10 md:h-10 lg:w-14 lg:h-14" strokeWidth={0.95} />
+               <Hand className="w-8 h-8 md:w-10 md:h-10 lg:w-14 lg:h-14" strokeWidth={1} />
                </span>
             </div>
          </div>

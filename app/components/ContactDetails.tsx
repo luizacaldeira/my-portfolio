@@ -16,7 +16,7 @@ github?: string;
 export default function ContactDetails({
 links = {},
 title = "Contact & Availability",
-description = "I build accessible, performant front-ends and I’m open to freelance and contract work. Reach out if you want to collaborate or just say hi.",
+description = "Front-end developer building accessible, high-performance interfaces with care and purpose. Open to freelance, contract work, and collaborations.",
 location = "Juiz de Fora, Brazil",
 }: {
 links?: SocialLinks;

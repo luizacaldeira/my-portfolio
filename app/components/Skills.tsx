@@ -26,8 +26,10 @@ export default function Skills() {
    return (
       <section>
          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Development Focus Card */}
-            <div className="group relative p-6 bg-white/7 backdrop-blur-lg border border-white/10 rounded-2xl hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300 flex flex-col gap-2">
+            <div 
+               className="group relative p-6 bg-white/7 backdrop-blur-lg border border-white/10 rounded-2xl hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300 flex flex-col gap-2"
+               data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-anchor-placement='top-bottom'
+            >
                <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-blue-500/10 rounded-xl group-hover:bg-blue-500/20 transition-all duration-300">
                      <Code2 size={30} className="text-blue-300" />
@@ -46,9 +48,11 @@ export default function Skills() {
                </div>
             </div>
 
-            {/* Soft Skills Card */}
-            <div className="group relative bg-white/7 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300
-               flex flex-col gap-2">
+            <div 
+               className="group relative bg-white/7 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300
+               flex flex-col gap-2"
+               data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="200" data-aos-anchor-placement="top-bottom"
+            >
                <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-green-500/10 rounded-xl group-hover:bg-green-500/20 transition-all duration-300">
                      <Sparkles size={30} className="text-green-300" />
@@ -67,9 +71,11 @@ export default function Skills() {
                </div>
             </div>
 
-            {/* Hobbies Card */}
-            <div className="group relative bg-white/7 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300
-               flex flex-col gap-2">
+            <div 
+               className="group relative bg-white/7 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300
+               flex flex-col gap-2"
+               data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="400" data-aos-anchor-placement="top-bottom"
+            >
                <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-pink-500/10 rounded-xl group-hover:bg-pink-500/20 transition-all duration-300">
                      <Heart size={30} className="text-pink-300" />
