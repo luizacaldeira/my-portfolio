@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
 
       await resend.emails.send({
             from: "onboarding@resend.dev",
-            to: "luizacaldeirad@gmail.com",
+            to: "luizaccaldeiradaniel@gmail.com",
             subject,
             text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
             replyTo: email,
