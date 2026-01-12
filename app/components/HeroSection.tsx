@@ -5,38 +5,38 @@ import CodeLines from "./CodeLines";
 
 export default function Hero() {
 return (
-   <header className="w-full flex flex-col md:flex-row items-center md:items-start justify-between px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-6 md:py-10 gap-6 md:gap-10 mb-5">
-      <div className="text-white flex flex-col justify-between w-full md:flex-1">
-      <div className="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start gap-2 md:gap-6 text-3xl md:text-6xl font-light">
-         <div className="inline-flex items-center whitespace-nowrap gap-2 md:gap-6">
-            <p>
-               Hi, I&apos;m
-            </p>
-            <p className="font-display mt-1 bg-linear-to-r from-indigo-400 via-purple-300 to-indigo-400 bg-clip-text text-transparent animate-shimmer bg-size-[200%_100%] [text-shadow:0_0_20px_rgba(167,139,250,0.8),0_0_40px_rgba(167,139,250,0.5)]">
-            Luiza
-            </p>
-            <span className="animate-wiggle-more animate-infinite animate-ease-in-out mt-0 md:mt-3">
-            <Hand className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14" strokeWidth={0.95} />
-            </span>
+   <header className="w-full flex flex-col md:flex-row items-center lg:items-start justify-center px-6 md:px-10 py-6 md:py-10 gap-0 lg:gap-30 mb-5">
+      <div className="text-white flex flex-col justify-between">
+         <div className="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start gap-2 md:gap-6 text-3xl md:text-4xl lg:text-6xl font-light">
+            <div className="inline-flex items-center whitespace-nowrap gap-2 md:gap-3 lg:gap-6">
+               <p>
+                  Hi, I&apos;m
+               </p>
+               <p className="font-display mt-1 bg-linear-to-r from-indigo-400 via-purple-300 to-indigo-400 bg-clip-text text-transparent animate-shimmer bg-size-[200%_100%] [text-shadow:0_0_20px_rgba(167,139,250,0.8),0_0_40px_rgba(167,139,250,0.5)]">
+               Luiza
+               </p>
+               <span className="animate-wiggle-more animate-infinite animate-ease-in-out mt-0 md:mt-3">
+               <Hand className="w-8 h-8 md:w-10 md:h-10 lg:w-14 lg:h-14" strokeWidth={0.95} />
+               </span>
+            </div>
+         </div>
+
+         <div className="mt-4 mb-6 md:mb-7 flex justify-center md:justify-start">
+            <TypingRoles />
+         </div>
+
+         <div className="w-fit flex justify-center md:justify-start ">
+            <Image
+               src="/keyframe.png"
+               alt="keyframe illustration"
+               width={350}
+               height={400}
+               className="w-48 sm:w-64 md:w-80 h-auto object-contain animate-fade-right animate-delay-300"
+            />
          </div>
       </div>
 
-      <div className="mt-4 mb-6 md:mb-7 flex justify-center md:justify-start">
-         <TypingRoles />
-      </div>
-
-      <div className="w-full flex justify-center md:justify-start ">
-         <Image
-            src="/keyframe.png"
-            alt="keyframe illustration"
-            width={350}
-            height={400}
-            className="w-48 sm:w-64 md:w-100 h-auto object-contain animate-fade-right animate-delay-300"
-         />
-      </div>
-      </div>
-
-      <div className="flex flex-col items-center md:items-end justify-between w-full md:w-fit gap-4 h-auto md:h-full">
+      <div className="flex flex-col items-center md:items-end justify-between gap-4 h-auto md:h-full">
       <div className="hidden md:block">
          <CodeLines />
       </div>
