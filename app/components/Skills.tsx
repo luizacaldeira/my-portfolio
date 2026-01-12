@@ -1,4 +1,4 @@
-import {Sparkles, Heart, Code2, Tv, Film, Dumbbell, BookOpen } from "lucide-react";
+import {Sparkles, Heart, Code2, Tv, Film, Dumbbell, CookingPot } from "lucide-react";
 
 
 const devSkills = [
@@ -19,7 +19,7 @@ const hobbies = [
    { name: 'Watching Series', icon: <Tv size={16} /> },
    { name: 'Video Editing', icon: <Film size={16} /> },
    { name: 'Gym & Fitness', icon: <Dumbbell size={16} /> },
-   { name: 'Reading', icon: <BookOpen size={16} /> },
+   { name: 'Cooking', icon: <CookingPot size={16} /> },
 ];
 
 export default function Skills() {
