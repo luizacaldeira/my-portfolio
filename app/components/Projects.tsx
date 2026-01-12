@@ -17,9 +17,9 @@ const myProjects: Project[] = [
       title: 'MedSys',
       description:
          'A system for managing medical appointments and patient records. Featuring a user-friendly interface and secure data handling.',
-      imageUrl: '/texted-med.png',
-      projectUrl: 'https://medsys-expo.vercel.app/',
-      githubUrl: 'https://github.com/luizacaldeira/medsys',
+      imageUrl: '/med-sys-gradient.png',
+      projectUrl: '/',
+      githubUrl: 'https://github.com/caiofdev/medsys',
       technologies: ['React', 'Laravel', 'Tailwind CSS'],
       status: 'In Progress',
       progress: 85,
@@ -49,7 +49,9 @@ export default function Projects({
             {projects.map((project) => (
                <div
                   key={project.title}
-                  className="w-full relative rounded-2xl overflow-hidden backdrop-blur-lg bg-white/5 border border-white/10 flex flex-col md:flex-row min-h-80"
+                  className="w-full relative rounded-2xl overflow-hidden backdrop-blur-lg bg-white/5 border border-white/10 flex flex-col md:flex-row min-h-80
+                  hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300
+                  "
                >
                   {/* Image */}
                   <div className="relative h-56 md:h-auto md:w-2/5 w-full overflow-hidden shrink-0">
@@ -58,7 +60,7 @@ export default function Projects({
                         alt={project.title}
                         width={500}
                         height={500}
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105 rounded-t-2xl md:rounded-l-2xl md:rounded-t-none"
+                        className="w-full h-full object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-t-none"
                      />
                      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent opacity-80 pointer-events-none" />
                   </div>
@@ -98,7 +100,7 @@ export default function Projects({
                                  href={project.projectUrl}
                                  target="_blank"
                                  rel="noopener noreferrer"
-                                 className="flex text-sm items-center justify-center px-5 py-1.5 rounded-2xl 
+                                 className="flex whitespace-nowrap text-sm items-center justify-center px-5 py-1 rounded-2xl 
                                  bg-linear-to-r from-indigo-400/50 to-indigo-400/50 
                                  hover:from-indigo-300/50 hover:to-indigo-500/50 
                                  text-white font-semibold transition duration-300 
@@ -114,7 +116,7 @@ export default function Projects({
                                  href={project.githubUrl}
                                  target="_blank"
                                  rel="noopener noreferrer"
-                                 className="text-sm px-4 py-1.5 rounded-2xl 
+                                 className="text-sm  whitespace-nowrap px-4 py-1.5 rounded-2xl 
                                  bg-indigo-400/15 border border-indigo-300/20 
                                  hover:bg-indigo-100/25 hover:text-indigo-900 duration-350
                                  text-white font-medium transition backdrop-blur-md"
