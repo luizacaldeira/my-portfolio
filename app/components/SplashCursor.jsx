@@ -291,7 +291,8 @@ function SplashCursor({
       void main () {
         vec3 c = texture2D(uTexture, vUv).rgb;
         float a = max(c.r, max(c.g, c.b));
-        a *= 0.25; // more transparent
+        a *= 0.10; 
+        c *= 0.40;
         gl_FragColor = vec4(c, a);
       }
     `;
@@ -1053,7 +1054,7 @@ function SplashCursor({
         position: 'fixed',
         top: 0,
         left: 0,
-        zIndex: 50,
+        zIndex: 2, // behind everything
         pointerEvents: 'none',
         width: '100%',
         height: '100%'

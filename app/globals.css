@@ -59,9 +59,9 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  z-index: 10;
+  z-index: 1;
   pointer-events: none;
-  opacity: 0.10;
+  opacity: 0.18;
   background-image: url('/grain.jpg');
   background-repeat: repeat;
   mix-blend-mode: multiply;

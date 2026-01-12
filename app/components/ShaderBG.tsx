@@ -9,7 +9,7 @@ export default function ShaderBackground() {
                left: 0,
                width: '100vw',
                height: '100vh',
-               opacity: 0.5,
+               opacity: 0.4,
             }}
             pointerEvents='none'
       >
