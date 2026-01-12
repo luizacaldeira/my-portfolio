@@ -14,6 +14,8 @@
     "@shadergradient/react": "^2.4.20",
     "aos": "^3.0.0-beta.6",
     "camera-controls": "^3.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "lucide": "^0.562.0",
     "lucide-react": "^0.562.0",
     "next": "16.1.1",
@@ -22,6 +24,8 @@
     "react-icons": "^5.5.0",
     "resend": "^6.7.0",
     "swiper": "^12.0.3",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7",
     "three": "^0.182.0",
     "three-stdlib": "^2.36.1"
   },

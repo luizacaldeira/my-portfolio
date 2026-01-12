@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import FluidCursor from "./components/FluidCursor";
+import SplashCursor from './components/SplashCursor'
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -41,7 +41,7 @@ export default function RootLayout({
         className={`${roboto.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
         {children}
-        <FluidCursor />
+        <SplashCursor />
       </body>
     </html>
   );
