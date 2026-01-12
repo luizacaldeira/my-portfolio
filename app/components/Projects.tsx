@@ -30,7 +30,7 @@ const myProjects: Project[] = [
          'An e-commerce website for skincare products. Features a sleek, animated design and smooth user experience.',
       imageUrl: '/lumaskin.png',
       projectUrl: 'https://luma-skin.vercel.app/',
-      githubUrl: 'https://github.com/luizacaldeira/luma-skin',
+      githubUrl: 'https://github.com/luizacaldeira/LumaSkin',
       technologies: ['Next.js', 'Tailwind CSS', 'Node.js'],
       status: 'Completed',
    },
