@@ -34,7 +34,7 @@ return (
                <TypingRoles />
             </div>
 
-            <div className="w-fit flex justify-center md:justify-start animate-shake animate-infinite animate-duration-0000">
+            <div className="w-fit flex justify-center md:justify-start animate-shake animate-infinite animate-duration-17000">
                <Image
                   src="/keyframe.png"
                   alt="keyframe illustration"
