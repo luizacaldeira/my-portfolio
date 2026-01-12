@@ -1,13 +1,8 @@
 
-import { Linkedin, Mail, Phone, Instagram, Github } from "lucide-react";
-import { SiWhatsapp } from "react-icons/si";
+import { Linkedin, Github } from "lucide-react";
 
 type SocialLinks = {
    linkedin?: string;
-   email?: string;
-   phone?: string;
-   whatsapp?: string;
-   instagram?: string;
    github?: string;
 };
 
@@ -17,11 +12,7 @@ export default function SocialMedia({
    links?: SocialLinks;
 }) {
    const defaults: Required<SocialLinks> = {
-      linkedin: '#',
-      email: 'mailto:luizacaldeirad@gmail.com',
-      phone: 'tel:+5531996641192',
-      whatsapp: 'https://wa.me/5531996641192',
-      instagram: 'https://www.instagram.com/luizacald/',
+      linkedin: 'https://www.linkedin.com/in/luiza-caldeira/',
       github: 'https://github.com/luizacaldeira',
       };
 
@@ -29,10 +20,6 @@ export default function SocialMedia({
 
    const items = [
       { href: final.linkedin, label: 'LinkedIn', icon: <Linkedin size={18} /> },
-      { href: final.email, label: 'Email', icon: <Mail size={18} /> },
-      { href: final.phone, label: 'Phone', icon: <Phone size={18} /> },
-      { href: final.whatsapp, label: 'WhatsApp', icon: <SiWhatsapp size={18} /> },
-      { href: final.instagram, label: 'Instagram', icon: <Instagram size={18} /> },
       { href: final.github, label: 'GitHub', icon: <Github size={18} /> },
    ];
 
