@@ -10,8 +10,14 @@ import Experience from './components/Experience';
 import ContactPage from './components/ContactPage';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Page() {
+	useEffect(() => {
+		AOS.init({ once: false });
+	}, []);
 	return (
 		<div id="top" className="bg-grain h-full relative bg-black overflow-hidden">
 				<LoadingScreen />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import FluidCursor from "./components/FluidCursor";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -24,11 +25,13 @@ export const metadata: Metadata = {
   title: "Luiza's Portfolio",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <head>
@@ -38,6 +41,7 @@ export default function RootLayout({
         className={`${roboto.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
         {children}
+        <FluidCursor />
       </body>
     </html>
   );
