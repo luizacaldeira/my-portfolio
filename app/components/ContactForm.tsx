@@ -102,7 +102,7 @@ export default function ContactForm() {
             <div className="flex flex-col gap-2">
                <FormInput
                   label="Full name"
-                  placeholder="e.g. Jane Doe"
+                  placeholder="Your full name"
                   type="text"
                   name="name"
                   value={emailData.name}
@@ -116,7 +116,7 @@ export default function ContactForm() {
             <div className="flex flex-col gap-2">
                <FormInput
                   label="Email"
-                  placeholder="you@company.com"
+                  placeholder="you@example.com"
                   type="email"
                   name="email"
                   value={emailData.email}
@@ -131,7 +131,7 @@ export default function ContactForm() {
             <div className="flex flex-col gap-2">
             <FormInput
                label="Subject"
-               placeholder="e.g. Project inquiry — website redesign"
+               placeholder="Subject of your message"
                type="text"
                name="subject"
                value={emailData.subject}
@@ -146,7 +146,7 @@ export default function ContactForm() {
             <div className="flex flex-col gap-2">
             <FormInput
                label="Message"
-               placeholder="Briefly describe your project, timeline, and budget (optional)"
+               placeholder="Write your message here"
                name="message"
                textarea
                value={emailData.message}
@@ -166,6 +166,7 @@ export default function ContactForm() {
                bg-linear-to-r from-indigo-200/50 to-indigo-300/40 text-indigo-50 backdrop-blur-md px-6 py-3 font-medium border border-indigo-100/30
                transition-all duration-300 cursor-pointer
                hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(255,255,255,0.10)]
+               hover:to-emerald-200/50 hover:from-emerald-700/40
                disabled:cursor-not-allowed disabled:opacity-60
                md:w-fit
             `}
