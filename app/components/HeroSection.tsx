@@ -72,7 +72,7 @@ return (
                <span className="text-sm md:text-base">Get in Touch</span>
             </a>
             <a
-               href="https://www.linkedin.com/in/luizacaldeira/"
+               href="https://www.linkedin.com/in/luiza-caldeira/"
                target="_blank"
                rel="noopener noreferrer"
                className="inline-flex items-center justify-center rounded-full cs-glass-blue border border-white/20 p-2 transition-colors duration-200 shadow-md"
