@@ -292,7 +292,7 @@ function SplashCursor({
         vec3 c = texture2D(uTexture, vUv).rgb;
         float a = max(c.r, max(c.g, c.b));
         a *= 0.10; 
-        c *= 0.40;
+        c *= 0.50;
         gl_FragColor = vec4(c, a);
       }
     `;
