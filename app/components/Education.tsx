@@ -92,29 +92,32 @@ export default function Education() {
                </h3>
                </div>
 
-               <div className="flex flex-col gap-5">
-               {languages.map((lang) => (
-                  <div key={lang.name} className="flex items-center gap-4">
-                     <span className="w-24 text-white font-medium">
-                     {lang.name}
-                     </span>
-
-                     <div className="flex-1 h-2 bg-white/25 rounded-full overflow-hidden border border-white/20">
+               <div className="flex flex-col gap-4 w-full">
+                  {languages.map((lang) => (
                      <div
+                        key={lang.name}
                         className="
-                           h-full
-                           bg-linear-to-r from-indigo-300 to-indigo-700
-                           transition-all duration-500
+                           grid grid-cols-1 gap-2 md:gap-5
+                           sm:grid-cols-[80px_1fr_70px]
+                           items-center
                         "
-                        style={{ width: `${lang.level}%` }}
-                     />
-                     </div>
+                     >
+                        <span className="text-white font-medium text-sm sm:text-base sm:text-right">
+                           {lang.name}
+                        </span>
 
-                     <span className="w-20 text-right text-white/60 text-sm">
-                     {lang.label}
-                     </span>
-                  </div>
-               ))}
+                        <div className="h-2 w-full bg-white/25 rounded-full overflow-hidden border border-white/10">
+                           <div
+                              className="h-full bg-linear-to-r from-indigo-300 to-indigo-700 transition-all duration-500"
+                              style={{ width: `${lang.level}%` }}
+                           />
+                        </div>
+                        
+                        <span className="text-right text-white/60 text-xs sm:text-sm">
+                           {lang.label}
+                        </span>
+                     </div>
+                  ))}
                </div>
             </div>
             <div id="projects"></div>
