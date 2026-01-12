@@ -5,7 +5,7 @@ import CodeLines from "./CodeLines";
 
 export default function Hero() {
 return (
-   <header className="w-full flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-30 lg:px-45 py-6 md:py-10 gap-6 md:gap-10 mb-5">
+   <header className="w-full flex flex-col md:flex-row items-center md:items-start justify-between px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-6 md:py-10 gap-6 md:gap-10 mb-5">
       <div className="text-white flex flex-col justify-between w-full md:flex-1">
       <div className="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start gap-2 md:gap-6 text-3xl md:text-6xl font-light">
          <div className="inline-flex items-center whitespace-nowrap gap-2 md:gap-6">

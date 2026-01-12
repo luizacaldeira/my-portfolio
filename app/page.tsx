@@ -20,10 +20,10 @@ export default function Page() {
 					<Navigation />
 					<main className="flex flex-col items-center justify-center pt-40">
 						<HeroSection />
-						<ToolsSwiper />
-						<Projects />
-						<Education />
 						<AboutMe />
+						<ToolsSwiper />
+						<Education />
+						<Projects />
 						<Experience />
 						<ContactPage />
 					</main>

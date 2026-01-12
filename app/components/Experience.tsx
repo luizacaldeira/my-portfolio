@@ -86,7 +86,7 @@ const experiences: ExperienceItem[] = [
 
 export default function Experience() {
    return (
-      <section className="w-full max-w-6xl mx-auto px-5 md:px-20 pb-20 pt-10">
+      <section className="w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20">
          <h2 className="text-white text-4xl mb-16 text-center">Experience</h2>
          
          <div className="relative">
@@ -103,7 +103,7 @@ export default function Experience() {
                      
                <div className="
                   group relative
-                  bg-white/10 backdrop-blur-xl
+                  bg-white/5 backdrop-blur-xl
                   border border-white/10
                   rounded-2xl p-6
                   transition-all duration-300
@@ -131,7 +131,7 @@ export default function Experience() {
                         <h3 className="text-white text-lg font-semibold leading-tight">
                            {exp.title}
                         </h3>
-                        <p className="text-indigo-300 text-sm font-medium">
+                        <p className="text-indigo-300 text-sm w-fit whitespace-nowrap">
                            {exp.company}
                         </p>
                         </div>

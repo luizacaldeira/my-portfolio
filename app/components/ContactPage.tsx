@@ -3,7 +3,7 @@ import ContactDetails from "./ContactDetails";
 
 export default function ContactPage() {
    return (
-      <div id="contact" className="w-full max-w-6xl px-4 py-10 h-full">
+      <div id="contact" className="w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20 h-full">
          <div className="flex flex-col md:flex-row gap-8 md:gap-10 h-full">
             <div className="flex-1 h-full">
                <ContactForm />

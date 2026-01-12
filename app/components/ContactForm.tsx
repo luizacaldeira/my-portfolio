@@ -76,7 +76,7 @@ export default function ContactForm() {
    }
 
    return (
-      <section className="mx-auto mb-0 w-full h-fit md:h-screen rounded-2xl border border-white/10 bg-white/7 px-6 py-12 backdrop-blur-lg flex flex-col">
+      <section className="mx-auto mb-0 w-full h-fit rounded-2xl border border-white/10 bg-white/7 px-6 sm:px-10 md:px-8 py-12 backdrop-blur-lg flex flex-col">
          
          <h2 className="mb-10 text-center text-3xl text-white">
             Contact Me

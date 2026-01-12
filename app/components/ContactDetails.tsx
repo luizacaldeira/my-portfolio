@@ -46,7 +46,7 @@ async function handleCopy(text: string, key: string) {
 }
 
 return (
-   <section className="flex flex-col h-fit md:h-screen justify-start bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-[inset_0_2px_8px_0_rgba(255,255,255,0.06)]">
+   <section className="flex flex-col h-full justify-start bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 sm:p-8 shadow-[inset_0_2px_8px_0_rgba(255,255,255,0.06)]">
       <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
       <p className="text-white/80 text-sm mb-4">{description}</p>
 

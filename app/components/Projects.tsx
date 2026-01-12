@@ -42,14 +42,14 @@ export default function Projects({
    projects?: Project[];
 }) {
    return (
-      <section id="projects" className="w-full max-w-7xl mx-auto px-5 lg:px-20 py-10">
+      <section id="projects" className="w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-10">
          <h2 className="text-white text-4xl mb-12 text-center">Projects</h2>
 
          <div className="flex flex-col lg:flex-row gap-7 items-center">
             {projects.map((project) => (
                <div
                   key={project.title}
-                  className="w-full relative rounded-2xl overflow-hidden cs-glass flex flex-col md:flex-row min-h-80"
+                  className="w-full relative rounded-2xl overflow-hidden backdrop-blur-lg bg-white/5 border border-white/10 flex flex-col md:flex-row min-h-80"
                >
                   {/* Image */}
                   <div className="relative h-56 md:h-auto md:w-2/5 w-full overflow-hidden shrink-0">
@@ -64,7 +64,7 @@ export default function Projects({
                   </div>
 
                   {/* Content */}
-                  <div className="flex flex-col p-6 bg-white/10 backdrop-blur-xl rounded-b-2xl md:rounded-b-none md:rounded-r-2xl w-full gap-4">
+                  <div className="flex flex-col p-6 md:rounded-b-none md:rounded-r-2xl w-full gap-4">
                      {/* Header */}
                      <div>
                         <h3 className="text-white text-xl font-semibold mb-1">

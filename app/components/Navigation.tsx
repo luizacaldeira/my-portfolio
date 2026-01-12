@@ -3,7 +3,7 @@ import { Home } from "lucide-react";
 export default function Navigation() {
     return (
         <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-            <ul className="flex gap-6 md:gap-10 text-white text-md   md:text-xl backdrop-filter backdrop-brightness-150 px-8 py-3 backdrop-blur-xl rounded-full shadow-lg border border-white/5">
+            <ul className="flex gap-6 md:gap-10 text-white text-md md:text-xl backdrop-filter backdrop-brightness-150 px-10 py-3 backdrop-blur-xl rounded-full shadow-lg border border-white/5">
                 <li className="hover:text-indigo-300 transition-colors">
                     <a href="#top">
                         <Home className="w-5 h-5 inline-block mr-1 mb-0.5" />

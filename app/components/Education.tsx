@@ -8,12 +8,12 @@ export default function Education() {
       { name: 'English', level: 85, label: 'Advanced' },
    ];
    return (
-      <section className="w-full max-w-7xl mx-auto px-6 md:px-30 py-20">
+      <section className="w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20">
          <h2 className="text-white text-4xl mb-14 text-center">
             Education
          </h2>
 
-         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
             {/* Education Card */}
             <div
                className="
@@ -21,7 +21,7 @@ export default function Education() {
                bg-white/7 backdrop-blur-lg border border-white/10
                rounded-2xl p-10
                hover:bg-white/15 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(79,0,204,0.45)] transition-all duration-300
-               flex flex-col gap-8
+               flex flex-col gap-8 w-full
                "
             >
                {/* Header */}
