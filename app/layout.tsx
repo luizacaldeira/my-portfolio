@@ -3,6 +3,7 @@ import { Roboto, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import SplashCursor from './components/SplashCursor'
 
+
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
@@ -40,8 +41,10 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
-        {children}
-        <SplashCursor />
+        <main className="pt-0!">
+          {children}
+          <SplashCursor />
+        </main>
       </body>
     </html>
   );
