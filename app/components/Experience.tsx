@@ -90,12 +90,12 @@ export default function Experience() {
          <h2 className="text-white text-4xl mb-16 text-center">Experience</h2>
          
          <div className="relative">
-            <div className="absolute left-8 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-indigo-500/50 to-transparent"></div>
+            <div className="absolute md:left-8 left-7 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-indigo-500/50 to-transparent"></div>
             
             <div className="space-y-12">
                {experiences.map((exp, index) => (
                   <div key={index} className="relative pl-20">
-                     <div className={`absolute left-5 top-30 w-7 h-7 rounded-full border-2 transition-all duration-300 ${
+                     <div className={`absolute left-5 top-30 md:w-7 md:h-7 w-4 h-4 rounded-full border-2 transition-all duration-300 ${
                         exp.current 
                            ? 'bg-linear-to-r tag-pink border-white/50 shadow-[0_0_20px_rgba(99,102,241,0.6)]' 
                            : 'bg-indigo-800 border-white/30 hover:bg-white/20'
@@ -113,31 +113,31 @@ export default function Experience() {
                   ">
 
                   <div className="flex flex-col md:flex-row justify-between items-start mb-5">
-                     <div className="flex items-center gap-4">
+                     <div className="flex items-center gap-3 md:gap-4">
                         
                         <div className="
-                        p-3 rounded-xl
+                        p-2 md:p-3 rounded-xl
                         bg-linear-to-br from-white/15 to-white/5
                         border border-white/20
                         transition-transform duration-300
                         group-hover:scale-105
-                        ">
+                        w-fit">
                         <div className="text-white">
                            {exp.icon}
                         </div>
                         </div>
 
-                        <div>
-                        <h3 className="text-white text-lg font-semibold leading-tight">
-                           {exp.title}
-                        </h3>
-                        <p className="text-indigo-300 text-sm w-fit whitespace-nowrap">
-                           {exp.company}
-                        </p>
+                        <div className="flex flex-col">
+                           <h3 className="text-white text-md md:text-lg font-semibold leading-tight">
+                              {exp.title}
+                           </h3>
+                           <p className="text-indigo-300 text-xs md:text-sm w-fit">
+                              {exp.company}
+                           </p>
                         </div>
                      </div>
 
-                     <div className="flex flex-col md:mt-0 mt-5 items-start md:items-end w-full gap-2">
+                     <div className="flex flex-col md:mt-0 mt-3 items-start md:items-end w-fit gap-2">
                         <div className="flex items-center gap-2 text-white/60 text-xs">
                         <Calendar size={14} />
                         <span>{exp.period}</span>
@@ -158,7 +158,7 @@ export default function Experience() {
                      </div>
                   </div>
 
-                  <p className="text-white/80 text-sm leading-relaxed mb-4">
+                  <p className="text-white/80 text-xs md:text-sm leading-relaxed mb-4">
                      {exp.description}
                   </p>
 
@@ -166,7 +166,7 @@ export default function Experience() {
                      mt-4 pt-4
                      border-t border-white/10
                   ">
-                     <p className="text-indigo-300 font-semibold tracking-wider mb-3">
+                     <p className="text-indigo-300 font-medium tracking-wider mb-3">
                         Impact
                      </p>
 
@@ -174,7 +174,7 @@ export default function Experience() {
                         {exp.impacts.map((impact, i) => (
                         <li
                            key={i}
-                           className="flex items-start gap-3 text-white/75 text-sm"
+                           className="flex items-start gap-3 text-white/75 text-xs md:text-sm"
                         >
                            <span className="
                               mt-1 w-2 h-2
