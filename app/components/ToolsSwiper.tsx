@@ -8,6 +8,7 @@ export default function ToolsSwiper() {
 const tools = [
    { name: 'React.js', icon: <i className="devicon-react-original" /> },
    { name: 'Next.js', icon: <i className="devicon-nextjs-plain" /> },
+   {name: 'Angular', icon: <i className="devicon-angular-plain"/>},
    { name: 'JavaScript', icon: <i className="devicon-javascript-plain" /> },
    { name: 'Tailwind CSS', icon: <i className="devicon-tailwindcss-original" /> },
    { name: 'Node.js', icon: <i className="devicon-nodejs-plain" /> },
