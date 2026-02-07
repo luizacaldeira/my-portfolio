@@ -14,15 +14,14 @@ interface Project {
 
 const myProjects: Project[] = [
    {
-      title: 'MedSys',
+      title: 'TaskBoard',
       description:
-         'A system for managing medical appointments and patient records. Featuring a user-friendly interface and secure data handling.',
-      imageUrl: '/med-sys-gradient.png',
-      projectUrl: '/',
-      githubUrl: 'https://github.com/caiofdev/medsys',
-      technologies: ['React', 'Laravel', 'Tailwind CSS'],
-      status: 'In Progress',
-      progress: 85,
+         'Modern Kanban task management app featuring drag-and-drop, full CRUD operations, comments, dynamic themes, responsive design, local data persistence, and a smooth, usability-focused user experience.',
+      imageUrl: '/kanban.png',
+      projectUrl: 'https://taskboardlc.vercel.app/',
+      githubUrl: 'https://github.com/luizacaldeira/task-board',
+      technologies: ['Angular 21', 'Tailwind CSS', 'Angular CDK'],
+      status: 'Completed',
    },
    {
       title: 'Luma Skin Care',
